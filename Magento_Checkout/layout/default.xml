@@ -9,8 +9,13 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="header-wrapper">
-            <referenceBlock name="top.search" display="false"/>
-            <block class="Magento\Framework\View\Element\Template" name="top.search2" as="topSearch2" affter="logo" template="Magento_Search::form.mini.phtml" />
+            <container htmlTag="div" htmlClass="block block-account">
+                <block class="Magento\Cms\Block\Block" name="account-header">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">account-minicart</argument>
+                    </arguments>
+                </block>
+            </container>
         </referenceContainer>
     </body>
 </page>
