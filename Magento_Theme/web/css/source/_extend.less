@@ -1,1 +1,212 @@
-@import '_header';
+// For mobile & desktop
+& when (@media-common = true) {
+
+}
+
+// For desktop
+& when (@media-common = false) {
+    .page-header {
+        .panel.wrapper {
+            background: #fff !important;
+            color: #242424;
+            height: 40px;
+
+            .panel.header {
+                padding: 8px 20px;
+
+                .links {
+                    display: none;
+                }
+            }
+        }
+
+        .header {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 10px;
+            position: relative;
+            height: 140px;
+
+            .block-search {
+                order: 1;
+                width: 160px;
+                margin-top: 15px;
+
+                .action.search {
+                    color: #000;
+                }
+            }
+
+            .logo {
+                position: absolute;
+                left: 32%;
+                height: 120px;
+                order: 2;
+                margin: 0;
+            }
+
+            .block-account {
+                position: absolute;
+                right: 55px;
+                order: 3;
+                padding-top: 20px;
+
+                a {
+                    color: #000;
+                    font-family: 'Fugue';
+                    font-size: 14px;
+                    margin-right: 35px;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: pink;
+                    }
+
+                    img {
+                        vertical-align: text-top;
+                    }
+                }
+            }
+        }
+    }
+
+    form.minisearch {
+        .control {
+            input.input-text {
+                border: none;
+                width: 160px;
+            }
+
+            .action {
+                span {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .nav-sections {
+        background: #fff;
+
+        .navigation {
+            background: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-family: 'GT-Sectra-Fine';
+
+            ul {
+                .category-item {
+                    margin: 0;
+                    margin-right: 56px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        padding: 0;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-promotion {
+        display: contents;
+        .promotion-item {
+            font-family: 'Fugue';
+            color: #090909;
+            font-size: 16px;
+            width: 33%;
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
+
+// Từ 768px đến 1024px
+@media screen and (min-width: @screen__m) and (max-width: @screen__l) {
+    .page-header {
+        .panel.wrapper {
+            display: none;
+        }
+
+        .header.content {
+            max-height: 84px;
+
+            .logo {
+                position: absolute;
+                left: 36%;
+
+                img {
+                    max-height: 64px;
+                }
+            }
+
+            .block-account {
+                a {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .nav-sections {
+        .navigation {
+            ul {
+                text-align: center;
+
+                .category-item {
+                    margin-right: 20px;
+
+                    a {
+                        line-height: 30px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Từ 768 trở xuống
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .page-header {
+        .header-promotion {
+            display: none;
+        }
+
+        .header.content {
+            padding-bottom: 10px;
+            .block-account {
+                display: none;
+            }
+
+            .logo {
+                margin: 0 0 0 23%;
+                img{
+                    height: 50px;
+                }
+            }
+
+            .block-search {
+                .label:before {
+                    color: #505252;
+                }
+
+                .control {
+                    border: none;
+                }
+            }
+
+            .nav-toggle:before {
+                color: #505252;
+            }
+        }
+    }
+}
+
