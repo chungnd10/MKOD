@@ -29,5 +29,6 @@ Bai tap tao theme MKOD
         _(*2 Ảnh lấy trong thư mục AHT/MKOD/web/images/)_
 
 2. Footer
+- tạo mới Block MKOD 
     
     

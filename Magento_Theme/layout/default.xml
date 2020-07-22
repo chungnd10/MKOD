@@ -5,8 +5,7 @@
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="header.panel">
             <block class="Magento\Cms\Block\Block" name="header-promotion">
@@ -15,5 +14,21 @@
                 </arguments>
             </block>
         </referenceBlock>
+        <referenceContainer name="footer">
+            <block class="Magento\Cms\Block\Block" name="mkod-footer-customer-service">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">mkod-footer-customer-service</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="mkod-footer-features">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">mkod-footer-features</argument>
+                </arguments>
+            </block>
+            <referenceBlock name="footer_links" display="false"></referenceBlock>
+        </referenceContainer>
+        <move element="copyright" destination="footer" before="-" />
+        <move element="form.subscribe" destination="footer-container" before="-" />
+        <move element="product.info.socialmedia" destination="footer-container" before="-" /> 
     </body>
 </page>
