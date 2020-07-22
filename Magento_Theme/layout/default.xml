@@ -14,6 +14,11 @@
                 </arguments>
             </block>
         </referenceBlock>
+        <referenceContainer name="footer-container">
+            <container name="footer.top" htmlTag="div" htmlClass="footer-top" >
+
+            </container>
+        </referenceContainer>
         <referenceContainer name="footer">
             <block class="Magento\Cms\Block\Block" name="mkod-footer-customer-service">
                 <arguments>
@@ -27,8 +32,11 @@
             </block>
             <referenceBlock name="footer_links" display="false"></referenceBlock>
         </referenceContainer>
+
         <move element="copyright" destination="footer" before="-" />
-        <move element="form.subscribe" destination="footer-container" before="-" />
-        <move element="product.info.socialmedia" destination="footer-container" before="-" /> 
+        <move element="form.subscribe" destination="footer.top" before="-" />
+        <move element="product.info.socialmedia" destination="footer.top" before="-" />
+        <move element="footer.top" destination="footer-container" before="-" />
     </body>
 </page>
+
