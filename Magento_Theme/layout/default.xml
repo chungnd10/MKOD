@@ -15,11 +15,16 @@
             </block>
         </referenceBlock>
         <referenceContainer name="footer-container">
-            <container name="footer.top" htmlTag="div" htmlClass="footer-top" >
+            <container name="footer.top" htmlTag="div" htmlClass="footer-top">
 
             </container>
         </referenceContainer>
         <referenceContainer name="footer">
+            <block class="Magento\Cms\Block\Block" name="mkod-footer-copyright">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">mkod-footer-copyright</argument>
+                </arguments>
+            </block>
             <block class="Magento\Cms\Block\Block" name="mkod-footer-customer-service">
                 <arguments>
                     <argument name="block_id" xsi:type="string">mkod-footer-customer-service</argument>
@@ -30,12 +35,10 @@
                     <argument name="block_id" xsi:type="string">mkod-footer-features</argument>
                 </arguments>
             </block>
-            <referenceBlock name="footer_links" display="false"></referenceBlock>
+            <referenceBlock name="footer_links" display="false" />
         </referenceContainer>
-
-        <move element="copyright" destination="footer" before="-" />
-        <move element="form.subscribe" destination="footer.top" before="-" />
-        <move element="product.info.socialmedia" destination="footer.top" before="-" />
+        <referenceBlock name="copyright" remove="true" />
+        <move element="form.subscribe" destination="footer.top" after="product.info.socialmedia" />
         <move element="footer.top" destination="footer-container" before="-" />
     </body>
 </page>
