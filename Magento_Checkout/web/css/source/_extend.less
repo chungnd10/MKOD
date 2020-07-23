@@ -1,4 +1,6 @@
-// For mobile & desktop
+//
+// Mobile
+// _____________________________________________
 & when (@media-common = true) {
     .content {
         .minicart-wrapper {
@@ -10,13 +12,15 @@
                 content: 'bag';
                 font-size: 14px;
                 color: #0e0e0e;
-                font-family: 'Fugue';
+                font-family: @font-fugue;
             }
         }
     }
 }
 
-// For desktop2
+//
+// Desktop
+// _____________________________________________
 & when (@media-common = false) {
 
     .page-header {
@@ -38,52 +42,6 @@
     }
 }
 
-//// Tu 768px den 1024px
-//@media screen and (min-width: @screen__m) and (max-width: @screen__l) {
-//
-//}
-//
-//// Tu 480px den 767px
-//@media screen and (min-width: @screen__xs) and (max-width: 767px) {
-//    .page-header {
-//        .header {
-//            .minicart-wrapper {
-//                .action.showcart::before {
-//                    content: url("../images/bag-640.png");
-//                    margin: 24px 14px 0 0;
-//                }
-//
-//                .action.showcart::after {
-//                    content: '';
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//// Tu 640 tro xuong
-//.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
-//    .page-header {
-//        .header {
-//            .minicart-wrapper {
-//                .action.showcart::after {
-//                    content: '';
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//// Tu 480px den 600px
-//@media screen and (min-width: 480px) and (max-width: 600px) {
-//    .header {
-//        .minicart-wrapper {
-//            .action.showcart::before {
-//                margin: 15px 0 0 0;
-//            }
-//        }
-//    }
-//}
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .page-header {
