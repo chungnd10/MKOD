@@ -15,7 +15,7 @@
             </block>
         </referenceBlock>
         <referenceContainer name="footer-container">
-            <container name="footer.top" htmlTag="div" htmlClass="footer-top">
+            <container name="footer.top" htmlTag="div" htmlClass="footer-top footer content">
 
             </container>
         </referenceContainer>
