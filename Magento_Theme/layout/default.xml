@@ -16,10 +16,10 @@
         </referenceBlock>
         <referenceContainer name="footer-container">
             <container name="footer.top" htmlTag="div" htmlClass="footer-top footer content">
-
+                <block class="Magento\Framework\View\Element\Template" name="product.info.socialmedia" template="Magento_Theme::socialmedia.phtml"/>
             </container>
         </referenceContainer>
-        <referenceContainer name="footer">
+        <referenceContainer name="footer" htmlClass="footer-bottom footer content">
             <block class="Magento\Cms\Block\Block" name="mkod-footer-copyright">
                 <arguments>
                     <argument name="block_id" xsi:type="string">mkod-footer-copyright</argument>
