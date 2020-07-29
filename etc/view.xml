@@ -13,24 +13,20 @@
                 <height>140</height>
             </image>
             <image id="cart_cross_sell_products" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>250</width>
+                <height>374</height>
             </image>
             <image id="cart_page_product_thumbnail" type="small_image">
                 <width>165</width>
                 <height>165</height>
             </image>
             <image id="category_page_grid" type="small_image">
-                <width>240</width>
-                <height>300</height>
-            </image>
-            <image id="category_page_grid-1" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>250</width>
+                <height>374</height>
             </image>
             <image id="category_page_list" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>250</width>
+                <height>374</height>
             </image>
             <image id="customer_account_my_tags_tag_view" type="small_image">
                 <width>100</width>
@@ -57,8 +53,8 @@
                 <height>75</height>
             </image>
             <image id="new_products_content_widget_grid" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>250</width>
+                <height>374</height>
             </image>
             <image id="new_products_content_widget_list" type="small_image">
                 <width>270</width>
