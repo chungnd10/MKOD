@@ -1,0 +1,43 @@
+<?php
+
+    echo $block->getLayout()
+
+               ->createBlock('Magento\Cms\Block\Block')
+
+               ->setBlockId('featured-products')
+
+               ->toHtml();
+
+?>
+
+<script type="text/javascript">
+	require([
+    'jquery',
+    'owlcarousel'
+], function($) {
+    $('.slide1').owlCarousel({
+        loop: true,
+        nav: true,
+        navText: ["<img src='<?php echo $this->getViewFileUrl('images/pre.jpg'); ?>'>","<img src='<?php echo $this->getViewFileUrl('images/next.jpg'); ?>'>"],
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav: true
+            },
+            680:{
+                items:1,
+                nav: true
+            },
+            768:{
+                items:2,
+                nav:false
+            },
+            1024:{
+                items:3,
+                nav: false
+            }
+        }
+    });
+});
+</script>
