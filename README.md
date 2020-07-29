@@ -30,6 +30,7 @@ Bai tap tao theme MKOD
 2. Footer
 3. Phần HomePage:
 	3.1.Banner:
+    
 	- Tạo block:
 		+Title: banner.
 		+Id: banner.
