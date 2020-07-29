@@ -7,13 +7,14 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="header.panel">
+        <referenceContainer name="header.panel">
             <block class="Magento\Cms\Block\Block" name="header-promotion">
                 <arguments>
                     <argument name="block_id" xsi:type="string">header-promotion-block</argument>
                 </arguments>
             </block>
-        </referenceBlock>
+        </referenceContainer>
+
         <referenceContainer name="footer-container">
             <container name="footer.top" htmlTag="div" htmlClass="footer-top footer content">
                 <block class="Magento\Framework\View\Element\Template" name="product.info.socialmedia" template="Magento_Theme::socialmedia.phtml"/>
@@ -50,4 +51,3 @@
         <move element="breadcrumbs" destination="page.wrapper" after="page.main.title2"/>
     </body>
 </page>
-
