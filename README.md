@@ -5,7 +5,7 @@ Bai tap tao theme MKOD
 -----------------------------------------------------
 1. Header
     - Tạo mới block:
-        Block Promotion:<br/>
+        1.Block Promotion:<br/>
             - Title: Header Promotion Block<br/>
             - Identifier: header-promotion-block<br/>
             - All store views<br/>
@@ -17,18 +17,18 @@ Bai tap tao theme MKOD
                 <div class="promotion-item">30% STUDENT DISCOUNTS</div>
             </div>
             
-        Block Account-Minicart<br/>
-            - Title: Account-Minicart <br/>
-            - Identifier: account-minicart<br/>
+        2.Block Header Contact<br/>
+            - Title: Header Contact <br/>
+            - Identifier: header-contact<br/>
             - All store views<br/>
             - Contents:
             
             <a class="mini-conntact" href="{{store url=""}}contact"><img src="{{media url="wysiwyg/contact.png"}}" alt="">&nbsp;&nbsp;contact</a>
-            <a class="mini-account" href="{{store url=""}}customer/account"><img src="{{media url="wysiwyg/account.png"}}" alt="">&nbsp;&nbsp;account</a>
             
         _(*2 Ảnh lấy trong thư mục AHT/MKOD/web/images/)_
 
 2. Footer
+<<<<<<< HEAD
     2.1. Tạo block MKOD Footer FEATURES :
         +title : MKOD Footer FEATURES
         +id    : mkod-footer-features
@@ -64,8 +64,11 @@ Bai tap tao theme MKOD
             <h2 class="footer-header">YOUR ORDER</h2>
             <p class="footer-content">Copyright © 2018 - 2019 MyKindofDress</p>
             </div>
+=======
+>>>>>>> 4aeae83a9356d6040057536cda014606d58f94d4
 3. Phần HomePage:
 	3.1.Banner:
+    
 	- Tạo block:
 		+Title: banner.
 		+Id: banner.
