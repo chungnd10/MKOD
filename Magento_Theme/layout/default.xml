@@ -40,6 +40,14 @@
         <referenceBlock name="copyright" remove="true" />
         <move element="form.subscribe" destination="footer.top" after="product.info.socialmedia" />
         <move element="footer.top" destination="footer-container" before="-" />
+        <referenceBlock name="page.wrapper">
+            <container name="page.main.title2" htmlTag="div" htmlId="page-main-title2" htmlClass="page-main-title2" before="main.content">
+
+            </container>
+        </referenceBlock>
+        <move element="page.main.title" destination="page.main.title2" before="-" />
+        <move element="category.description" destination="page.main.title2" after="page.main.title" />
+        <move element="breadcrumbs" destination="page.wrapper" after="page.main.title2"/>
     </body>
 </page>
 
