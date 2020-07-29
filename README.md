@@ -29,6 +29,7 @@ Bai tap tao theme MKOD
         _(*2 Ảnh lấy trong thư mục AHT/MKOD/web/images/)_
 
 2. Footer
+<<<<<<< HEAD
 
 3. Phần HomePage:
 	3.1.Banner:
@@ -119,5 +120,4 @@ Bai tap tao theme MKOD
 		-Type widget: Catalog product list.
 		-Sau khi add sẽ thấy như dưới (lưu ý thay đổi file template grid.phtml thành file ta thay đổi, như bên dưới là test.phtml):
 			<p>{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" title="trending now" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/test.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`43`^]^]"}}</p>
-
     
