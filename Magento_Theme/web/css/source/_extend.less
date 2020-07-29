@@ -1,13 +1,15 @@
 //
-// Mobile
+// Mobile & Desktop
 // _____________________________________________
-//& when (@media-common = true) {
-//
-//}
+
+& when (@media-common = true) {
+
+}
 
 //
 // Desktop
 // _____________________________________________
+
 & when (@media-common = false) {
     .page-header {
         .panel.wrapper {
@@ -17,10 +19,6 @@
 
             .panel.header {
                 padding: 8px 20px;
-
-                .links {
-                    display: none;
-                }
             }
         }
 
@@ -49,11 +47,11 @@
                 margin: 0;
             }
 
-            .block-account {
+            .block-contact {
                 position: absolute;
                 right: 55px;
                 order: 3;
-                padding-top: 20px;
+                padding-top: 18px;
 
                 a {
                     color: #000;
@@ -70,6 +68,10 @@
                         vertical-align: text-top;
                     }
                 }
+            }
+
+            .links {
+                order: 4;
             }
         }
     }
@@ -99,7 +101,9 @@
             font-family: @font-gt-sectra-fine;
 
             ul {
-                .category-item {
+                padding: 0;
+
+                .level0 {
                     margin: 0;
                     margin-right: 56px;
 
@@ -111,6 +115,11 @@
                         padding: 0;
                         color: #000;
                     }
+
+                    .level1{
+                        font-weight: bold;
+                        padding: 5px 10px;
+                    }
                 }
             }
         }
@@ -118,6 +127,7 @@
 
     .header-promotion {
         display: contents;
+
         .promotion-item {
             font-family: @font-fugue;
             color: #090909;
@@ -129,7 +139,10 @@
     }
 }
 
+//
 // Từ 768px đến 1024px
+// _____________________________________________
+
 @media screen and (min-width: @screen__m) and (max-width: @screen__l) {
     .page-header {
         .panel.wrapper {
@@ -148,7 +161,7 @@
                 }
             }
 
-            .block-account {
+            .block-contact {
                 a {
                     margin-right: 15px;
                 }
@@ -177,7 +190,10 @@
     }
 }
 
-// Từ 768 trở xuống
+//
+// Mobile
+// _____________________________________________
+
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .page-header {
         .header-promotion {
@@ -186,12 +202,12 @@
 
         .header.content {
             padding-bottom: 10px;
-            .block-account {
+            .block-contact {
                 display: none;
             }
 
             .logo {
-                margin: 0 0 0 23%;
+                margin: 0 0 0 33%;
                 img{
                     height: 50px;
                 }

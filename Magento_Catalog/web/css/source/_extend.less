@@ -1,0 +1,280 @@
+//
+// Mobile & Desktop
+// _____________________________________________
+
+& when (@media-common = true) {
+
+    .product-info-main {
+        border-top: 1px solid #a7a7a7;
+        padding-top: 64px;
+
+        .page-title-wrapper {
+            text-align: center;
+
+            .page-title {
+                margin: 0;
+
+                span {
+                    font-family: @font-gt-sectra-fine;
+                    font-size: 30px;
+                    color: #0d0d0d;
+                }
+            }
+        }
+
+        .attribute.sku {
+            text-align: center;
+            font-size: 15px;
+            color: #8f8f8f;
+            margin-bottom: 15px;
+        }
+
+        .product-info-stock-sku {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0 0 5px 0;
+
+            .stock {
+                margin: 0;
+
+                span {
+                    color: #8f8f8f;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    margin-right: 5px;
+                }
+            }
+
+            .info-shipping {
+                color: #8f8f8f;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+
+        .product-info-price {
+            text-align: center;
+            border: none;
+            margin: 0;
+
+            .price-box {
+                padding-bottom: 0;
+
+                .normal-price {
+                    .price-label {
+                        display: none;
+                    }
+
+                    .price {
+                        font-size: 23px;
+                        color: #676767;
+                        font-weight: 600;
+                    }
+
+                    .price-container {
+                        .price-wrapper {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-add-form {
+            text-align: center;
+
+            .fieldset {
+                .swatch-opt {
+                    margin: 0;
+                }
+            }
+
+            .swatch-attribute-label {
+                display: none;
+            }
+
+            .action.primary.tocart {
+                font-family: @font-fugue;
+                background: #0d0d0d;
+                text-transform: uppercase;
+                font-size: 24px;
+                letter-spacing: 0.2em;
+                padding: 20px 0;
+                border-radius: 0;
+                border: none;
+            }
+
+            .swatch-attribute-selected-option {
+                display: none;
+            }
+
+            .product-options-wrapper {
+                display: flex;
+                justify-content: center;
+
+                .fieldset:last-child {
+                    margin-bottom: 30px;
+                }
+
+                .swatch-option.text {
+                    color: #323223;
+                    background: #fff;
+                    font-family: @font-fugue;
+                    font-size: 16px;
+                    padding: 10px;
+                    border: 1px solid #323232;
+                }
+            }
+        }
+
+        .product-size-guide {
+            text-align: center;
+
+            a {
+                font-family: @font-fugue;
+                color: #8f8f8f;
+                font-size: 16px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        .attribute.overview {
+            text-align: center;
+        }
+
+        .detailed {
+            .items {
+                .item.title {
+                    .switch {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: #0d0d0d !important;
+
+                        &:after {
+                            content: '\e61c';
+                            font-weight: bold;
+                        }
+
+                        .counter {
+                            color: inherit;
+                        }
+                    }
+                }
+
+                .item.title.active {
+                    .switch {
+                        &:after {
+                            content: '\e61c';
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-network {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+
+                li {
+                    margin-right: 60px;
+
+                    a {
+                        color: #000;
+                        font-family: @font-fugue;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .swatch-option-tooltip {
+        display: none;
+    }
+}
+
+
+//
+// Desktop
+// _____________________________________________
+
+& when (@media-common = false) {
+
+    .product-options-bottom {
+        .actions {
+            .tocart {
+                width: 70%;
+            }
+        }
+    }
+
+    .product-info-main {
+        .product-add-form {
+            padding: 0;
+        }
+    }
+
+    .social-network {
+        ul {
+            justify-content: start !important;
+            padding: 0;
+        }
+    }
+}
+
+//
+// Max @screen_m
+// _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .page-main {
+        padding: 0 70px;
+    }
+
+    .catalog-product-view {
+        .fotorama__nav {
+            display: none;
+        }
+    }
+
+    .product-info-main {
+        border: none !important;
+    }
+
+}
+
+//
+// Max @screen_s
+// _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .page-main {
+        padding: 0 15px;
+    }
+}
+
+//
+// Min @screen_m
+// _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-layout-1column {
+        .product-info-main {
+            width: 44%;
+        }
+    }
+    .page-layout-1column {
+        .product.media {
+            width: 49%;
+
+            .fotorama__stage {
+                height: 865px !important;
+            }
+        }
+    }
+
+}
