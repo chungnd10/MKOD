@@ -29,8 +29,38 @@ Bai tap tao theme MKOD
         _(*2 Ảnh lấy trong thư mục AHT/MKOD/web/images/)_
 
 2. Footer
-<<<<<<< HEAD
-
+    2.1. Tạo block MKOD Footer FEATURES :
+        +title : MKOD Footer FEATURES
+        +id    : mkod-footer-features
+        +content:
+            <div>
+                <h2 class="footer-header">FEATURES</h2>
+                <ul class="footer links footer-content">
+                    <li class="nav item"><a href="{{store url="fasq"}}">fasq</a></li>
+                    <li class="nav item"><a href="{{store url="about-us"}}">about us</a></li>
+                    <li class="nav item"><a href="{{store url="privacy-policy"}}">privacy policy</a></li>
+                    <li class="nav item"><a href="{{store url="delivery"}}">delivery</a></li>
+                </ul>
+            </div>
+    2.2. Tạo block mkod footer customer service :
+        +title : mkod footer customer service
+        +id    : mkod-footer-customer-service
+        +content:
+            <div>
+            <h2 class="footer-header">customer service</h2>
+            <div class="footer-content">
+            <p>customerservice@mykindofdress.com</p>
+            <p>Unit 1, Fashion city, Balymount, D24</p>
+            </div>
+            </div>
+    2.3. Tạo block MKOD footer copyright :
+        +title : MKOD footer copyright
+        +id    : mkod-footer-copyright
+        +content:
+            <div class="mkod-copyright">
+            <h2 class="footer-header">YOUR ORDER</h2>
+            <p class="footer-content">Copyright © 2018 - 2019 MyKindofDress</p>
+            </div>
 3. Phần HomePage:
 	3.1.Banner:
 	- Tạo block:

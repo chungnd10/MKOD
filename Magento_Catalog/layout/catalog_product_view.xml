@@ -35,5 +35,6 @@
             </container>
         </referenceContainer>
         <move element="product-size-guide" destination="product.info.options.wrapper.bottom" before="product.info.addtocart"/>
+        
     </body>
 </page>
