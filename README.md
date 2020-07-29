@@ -42,7 +42,7 @@ Bai tap tao theme MKOD
                     <li class="nav item"><a href="{{store url="delivery"}}">delivery</a></li>
                 </ul>
             </div>
-    2.2. Tạo block mkod footer customer service :
+    2.2. Tạo block mkod footer customer service 1:
         +title : mkod footer customer service
         +id    : mkod-footer-customer-service
         +content:
