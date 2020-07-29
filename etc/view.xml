@@ -49,9 +49,8 @@
                 <height>100</height>
             </image>
             <image id="mini_cart_product_thumbnail" type="thumbnail">
-<<<<<<< HEAD
-                <width>78</width>
-                <height>78</height>
+                <width>75</width>
+                <height>75</height>
             </image>
             <image id="new_products_content_widget_grid" type="small_image">
                 <width>250</width>
@@ -59,19 +58,7 @@
             </image>
             <image id="new_products_content_widget_list" type="small_image">
                 <width>270</width>
-                <height>270</height>
-=======
-                <width>75</width>
-                <height>75</height>
-            </image>
-            <image id="new_products_content_widget_grid" type="small_image">
-                <width>240</width>
-                <height>300</height>
-            </image>
-            <image id="new_products_content_widget_list" type="small_image">
-                <width>270</width>
                 <height>340</height>
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
             </image>
             <image id="new_products_images_only_widget" type="small_image">
                 <width>78</width>
@@ -87,21 +74,12 @@
             </image>
             <image id="product_page_image_large" type="image"/>
             <image id="product_page_image_medium" type="image">
-<<<<<<< HEAD
-                <width>700</width>
-                <height>700</height>
-            </image>
-            <image id="product_page_image_small" type="thumbnail">
-                <width>90</width>
-                <height>90</height>
-=======
                 <width>580</width>
                 <height>865</height>
             </image>
             <image id="product_page_image_small" type="thumbnail">
                 <width>175</width>
                 <height>265</height>
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
             </image>
             <image id="product_swatch_image_large" type="image"/>
             <image id="product_swatch_image_medium" type="image">
@@ -114,17 +92,6 @@
             </image>
             <image id="product_page_main_image" type="image">
                 <width>700</width>
-<<<<<<< HEAD
-                <height>700</height>
-            </image>
-            <image id="product_page_main_image_default" type="image">
-                <width>700</width>
-                <height>700</height>
-            </image>
-            <image id="product_page_more_views" type="thumbnail">
-                <width>90</width>
-                <height>90</height>
-=======
                 <height>560</height>
             </image>
             <image id="product_page_main_image_default" type="image">
@@ -134,7 +101,6 @@
             <image id="product_page_more_views" type="thumbnail">
                 <width>88</width>
                 <height>110</height>
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
             </image>
             <image id="product_stock_alert_email_product_image" type="small_image">
                 <width>76</width>
@@ -162,11 +128,7 @@
             </image>
             <image id="recently_compared_products_list_content_widget" type="small_image">
                 <width>270</width>
-<<<<<<< HEAD
-                <height>207</height>
-=======
                 <height>340</height>
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
             </image>
             <image id="recently_viewed_products_grid_content_widget" type="small_image">
                 <width>240</width>
@@ -182,19 +144,11 @@
             </image>
             <image id="recently_viewed_products_list_content_widget" type="small_image">
                 <width>270</width>
-<<<<<<< HEAD
-                <height>270</height>
-            </image>
-            <image id="related_products_list" type="small_image">
-                <width>140</width>
-                <height>140</height>
-=======
                 <height>340</height>
             </image>
             <image id="related_products_list" type="small_image">
                 <width>152</width>
                 <height>190</height>
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
             </image>
             <image id="review_page_product_image" type="small_image">
                 <width>285</width>
@@ -217,13 +171,8 @@
                 <height>90</height>
             </image>
             <image id="upsell_products_list" type="small_image">
-<<<<<<< HEAD
-                <width>140</width>
-                <height>140</height>
-=======
                 <width>152</width>
                 <height>190</height>
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
             </image>
             <image id="wishlist_sidebar_block" type="thumbnail">
                 <width>75</width>
@@ -252,10 +201,7 @@
             <var name="navdir">horizontal</var> <!-- Sliding direction of thumbnails (horizontal/vertical) -->
             <var name="navarrows">true</var> <!-- Turn on/off on the thumbs navigation sides arrows(true/false) -->
             <var name="navtype">slides</var> <!-- Sliding type of thumbnails (slides/thumbs) -->
-<<<<<<< HEAD
-=======
             <var name="thumbmargin">30</var>
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
             <var name="transition">
                 <var name="effect">slide</var> <!-- Sets transition effect for slides changing (slide/crossfade/dissolve) -->
                 <var name="duration">500</var> <!-- Sets transition duration in ms -->
@@ -263,14 +209,6 @@
             <var name="fullscreen">
                 <var name="nav">thumbs</var> <!-- Fullscreen navigation style (false/thumbs/dots) -->
                 <var name="loop">true</var> <!-- Fullscreen navigation loop (true/false/null) -->
-<<<<<<< HEAD
-                <var name="arrows">false</var> <!-- Turn on/off arrows on the sides preview in fullscreen (true/false/null) -->
-                <var name="caption">false</var> <!-- Display alt text as image title in fullscreen(true/false) -->
-                <var name="navdir">horizontal</var> <!--Sliding direction of thumbnails in fullscreen(horizontal/vertical)  -->
-                <var name="navtype">slides</var> <!-- Sliding type of thumbnails (slides/thumbs) -->
-                <var name="transition">
-                    <var name="effect">dissolve</var> <!-- Sets transition effect for slides changing (slide/crossfade/dissolve) -->
-=======
                 <var name="arrows">true</var> <!-- Turn on/off arrows on the sides preview in fullscreen (true/false/null) -->
                 <var name="caption">false</var> <!-- Display alt text as image title in fullscreen(true/false) -->
                 <var name="navdir">horizontal</var> <!--Sliding direction of thumbnails in fullscreen(horizontal/vertical)  -->
@@ -278,7 +216,6 @@
                 <var name="navtype">slides</var> <!-- Sliding type of thumbnails (slides/thumbs) -->
                 <var name="transition">
                     <var name="effect">slide</var> <!-- Sets transition effect for slides changing (slide/crossfade/dissolve) -->
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
                     <var name="duration">500</var> <!-- Sets transition duration in ms -->
                 </var>
             </var>
@@ -292,10 +229,7 @@
             <var name="height"></var> <!-- Height of magnifier block -->
             <var name="eventType">hover</var> <!-- Action that atcivates zoom (hover/click) -->
             <var name="enabled">false</var> <!-- Turn on/off magnifier (true/false) -->
-<<<<<<< HEAD
-=======
             <var name="mode">outside</var> <!-- Zoom type (outside/inside) -->
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
         </var>
 
         <var name="breakpoints">
@@ -324,14 +258,11 @@
     <vars module="Magento_Bundle">
         <var name="product_summary_image_size">58</var>         <!-- New Product image size used for summary block-->
     </vars>
-<<<<<<< HEAD
-=======
 
     <vars module="Magento_ConfigurableProduct">
         <var name="gallery_switch_strategy">prepend</var>
     </vars>
 
->>>>>>> e4e44c374494984915ec8878916ce124f81029ee
     <vars module="Js_Bundle">
         <var name="bundle_size">1MB</var>
     </vars>
