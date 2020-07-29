@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="product.info.details" destination="product.info.main" after="product.info.overview"/>
+        <move element="product.info.social" destination="product.info.main" after="product.info.details"/>
+        <move element="product.info.sku" destination="product.info.main" after="page.main.title"/>
+        <move element="product.info.stock.sku" destination="product.info.main" after="product.info.price"/>
+        <referenceBlock name="product.info.review" remove="true"/>
+        <referenceContainer name="product.info.stock.sku">
+            <block class="Magento\CMS\Block\Block" name="info-shipping">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">info-shipping</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="product.info.main">
+            <container htmlTag="div" htmlClass="social-network">
+                <block class="Magento\CMS\Block\Block" name="social-network">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">social-network</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container htmlTag="div" htmlClass="product-size-guide">
+                <block class="Magento\Framework\View\Element\Template" name="product-size-guide"
+                       template="Magento_Catalog::product/view/size_guide.phtml">
+                </block>
+            </container>
+        </referenceContainer>
+        <move element="product-size-guide" destination="product.info.options.wrapper.bottom" before="product.info.addtocart"/>
+    </body>
+</page>

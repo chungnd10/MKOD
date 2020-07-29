@@ -9,10 +9,10 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="header-wrapper">
-            <container htmlTag="div" htmlClass="block block-account">
+            <container htmlTag="div" htmlClass="block block-contact">
                 <block class="Magento\Cms\Block\Block" name="account-header">
                     <arguments>
-                        <argument name="block_id" xsi:type="string">account-minicart</argument>
+                        <argument name="block_id" xsi:type="string">header-contact</argument>
                     </arguments>
                 </block>
             </container>
