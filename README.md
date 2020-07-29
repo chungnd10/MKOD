@@ -28,6 +28,41 @@ Bai tap tao theme MKOD
         _(*2 Ảnh lấy trong thư mục AHT/MKOD/web/images/)_
 
 2. Footer
+    2.1. Tạo block MKOD Footer FEATURES :
+        +title : MKOD Footer FEATURES
+        +id    : mkod-footer-features
+        +content:
+
+            <div>
+                <h2 class="footer-header">FEATURES</h2>
+                <ul class="footer links footer-content">
+                    <li class="nav item"><a href="{{store url="fasq"}}">fasq</a></li>
+                    <li class="nav item"><a href="{{store url="about-us"}}">about us</a></li>
+                    <li class="nav item"><a href="{{store url="privacy-policy"}}">privacy policy</a></li>
+                    <li class="nav item"><a href="{{store url="delivery"}}">delivery</a></li>
+                </ul>
+            </div>
+    2.2. Tạo block mkod footer customer service 1:
+        +title : mkod footer customer service
+        +id    : mkod-footer-customer-service
+        +content:
+
+            <div>
+            <h2 class="footer-header">customer service</h2>
+            <div class="footer-content">
+            <p>customerservice@mykindofdress.com</p>
+            <p>Unit 1, Fashion city, Balymount, D24</p>
+            </div>
+            </div>
+    2.3. Tạo block MKOD footer copyright :
+        +title : MKOD footer copyright
+        +id    : mkod-footer-copyright
+        +content:
+
+            <div class="mkod-copyright">
+            <h2 class="footer-header">YOUR ORDER</h2>
+            <p class="footer-content">Copyright © 2018 - 2019 MyKindofDress</p>
+            </div>
 3. Phần HomePage:
 	3.1.Banner:
     
@@ -52,67 +87,68 @@ Bai tap tao theme MKOD
 			+Id: featured-products.
 			+Content: lấy ảnh theo tên trong thẻ img trong web/images
 
-<div class="featured-products">
-        <div class="featured-products__title">
-            <h3>featured products</h3>
-        </div>
-        <div class="slide1 owl-carousel owl-theme">
-            <div class="item">
-                <div class="img-cate"><img src="{{media url=" wysiwyg/left.png "}}" alt=""></div>
-                <div class="item__content">
-                    <div class="cate-name">
-                        <h3>summer shades</h3>
+
+            <div class="featured-products">
+                    <div class="featured-products__title">
+                        <h3>featured products</h3>
                     </div>
-                    <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/50"}}</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-cate"><img src="{{media url=" wysiwyg/center.png "}}" alt=""></div>
-                <div class="item__content">
-                    <div class="cate-name">
-                        <h3>occasion</h3>
+                    <div class="slide1 owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="img-cate"><img src="{{media url=" wysiwyg/left.png "}}" alt=""></div>
+                            <div class="item__content">
+                                <div class="cate-name">
+                                    <h3>summer shades</h3>
+                                </div>
+                                <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/50"}}</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-cate"><img src="{{media url=" wysiwyg/center.png "}}" alt=""></div>
+                            <div class="item__content">
+                                <div class="cate-name">
+                                    <h3>occasion</h3>
+                                </div>
+                                <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/51"}}</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-cate"><img src="{{media url=" wysiwyg/right.png "}}" alt=""></div>
+                            <div class="item__content">
+                                <div class="cate-name">
+                                    <h3>fashion</h3>
+                                </div>
+                                <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/52"}}</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-cate"><img src="{{media url=" wysiwyg/left.png "}}" alt=""></div>
+                            <div class="item__content">
+                                <div class="cate-name">
+                                    <h3>summer shades</h3>
+                                </div>
+                                <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/50"}}</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-cate"><img src="{{media url=" wysiwyg/center.png "}}" alt=""></div>
+                            <div class="item__content">
+                                <div class="cate-name">
+                                    <h3>occasion</h3>
+                                </div>
+                                <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/51"}}</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-cate"><img src="{{media url=" wysiwyg/right.png "}}" alt=""></div>
+                            <div class="item__content">
+                                <div class="cate-name">
+                                    <h3>fashion</h3>
+                                </div>
+                                <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/52"}}</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/51"}}</div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="img-cate"><img src="{{media url=" wysiwyg/right.png "}}" alt=""></div>
-                <div class="item__content">
-                    <div class="cate-name">
-                        <h3>fashion</h3>
-                    </div>
-                    <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/52"}}</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-cate"><img src="{{media url=" wysiwyg/left.png "}}" alt=""></div>
-                <div class="item__content">
-                    <div class="cate-name">
-                        <h3>summer shades</h3>
-                    </div>
-                    <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/50"}}</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-cate"><img src="{{media url=" wysiwyg/center.png "}}" alt=""></div>
-                <div class="item__content">
-                    <div class="cate-name">
-                        <h3>occasion</h3>
-                    </div>
-                    <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/51"}}</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-cate"><img src="{{media url=" wysiwyg/right.png "}}" alt=""></div>
-                <div class="item__content">
-                    <div class="cate-name">
-                        <h3>fashion</h3>
-                    </div>
-                    <div class="cate-link">{{widget type="Magento\Catalog\Block\Category\Widget\Link" template="Magento_Catalog::category/widget/link/link_block.phtml" id_path="category/52"}}</div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 	3.3. Thêm widget vào Homepage:
 		-Type widget: Catalog product list.
