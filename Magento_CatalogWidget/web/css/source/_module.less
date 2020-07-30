@@ -4,18 +4,113 @@
 //Homepage feature product mobile + desktop
 & when (@media-common = true) {
 //trending
-.trending-product {
-	padding: 0 26px;
-	text-align: center;
-	.trending-product__title {
-		padding-bottom: 27px;
+	.block-products-list {
+		padding: 0 26px;
 		text-align: center;
-			strong {
-				text-transform: uppercase;
-				font-weight: normal;
+		.block-title {
+			padding-bottom: 27px;
+			text-align: center;
+				strong {
+					text-transform: uppercase;
+					font-weight: normal;
+				}
+		}
+		.block-content {			
+			.box-list-product {
+				padding: 0;
+				display: flex;
+				.owl-item {
+					.item {
+						width: 100% !important;
+						.product-item-info {
+							box-shadow: none;
+							border: none;
+							&:hover {
+								margin: unset;
+								padding: unset;
+							}
+							.product-item-photo {
+								display: block;
+								padding-bottom: 10px;
+							}
+							.product-item-details {
+								.product-item-name {			
+									padding-left: 8px;
+									margin: 0;			
+									a {
+										text-decoration: none;
+										margin: 0;
+										color: @detail-letter;
+										font-size: 16px;
+									}
+								}
+								.cate {
+									padding-left: 11px;
+									padding-bottom: 7px;
+									line-height: 95%;
+									font-size: 16px;
+								}
+								.price-final_price {
+									padding-left: 5px;
+									padding-bottom: 3px;
+									margin: 0;
+									.price {
+										font-size: 18px;
+									}
+								}
+								.product-item-inner {
+									margin: 0;
+									height: auto;
+									width: auto;
+									box-shadow: none;
+									position: unset;
+									border: none;
+									display: flex;
+									justify-content: center;
+									.view {													
+										a {
+											color: @letter-color;
+											text-decoration: none ;
+											font-size: 12px;
+										}
+									}
+									.box {
+										.line {
+											margin-top: 6px;
+											margin-right: 13px;
+											margin-left: 13px;
+											border: 1px solid #767676;
+											height: 10px;
+										}
+									}
+									.product-item-actions {
+										margin: 0;
+										.tocart{
+											padding: 0;
+											background: none;
+											border: none;
+											cursor: pointer;
+											.action {
+												padding-top: 6px;
+												box-shadow: none ;											
+												padding: 0;
+												color: #ff9acd;											
+												font-size: 12px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}			
 			}
-	}
-	.trending-product__content {
+		}	
+	}	
+//rieng cho homepage
+
+//trending
+	.trending-product {
 		.owl-theme {
 			position: relative;
 			.owl-nav {
@@ -35,13 +130,13 @@
 					span{
 						display: none;
 					}
-				  }
+				}
 				.owl-prev:hover {
 					border-right: 20px solid #b2b2b2;
 					background: #fff;
 					color: #FFF;
 					text-decoration: none;
-				  }
+				}
 				.owl-next {
 					float: right;
 					position: relative;
@@ -60,167 +155,29 @@
 					background: #fff;
 					color: #FFF;
 					text-decoration: none;
-				  }
-			}
-		}
-		.slideTrending {
-			padding: 0;
-			.owl-nav {
-				display: block;
-			}
-		}
-		.box-list-product {
-			display: flex;
-			.owl-item {
-				.item {
-					width: 100% !important;
-					.a-product {
-						box-shadow: none;
-						border: none;
-						&__img {
-							display: block;
-							padding-bottom: 10px;
-						}
-						&__info {
-							.name {			
-								padding-left: 8px;
-								margin: 0;			
-								a {
-									text-decoration: none;
-									margin: 0;
-									color: @detail-letter;
-									font-size: 16px;
-								}
-							}
-							.cate {
-								padding-left: 11px;
-								padding-bottom: 7px;
-								line-height: 95%;
-								font-size: 16px;
-							}
-							.price-final_price {
-								padding-left: 5px;
-								padding-bottom: 3px;
-								margin: 0;
-								.price {
-									font-size: 18px;
-								}
-							}
-							.actions {
-								margin: 0;
-								padding-left: 8px;
-								height: auto;
-								width: auto;
-								box-shadow: none;
-								position: unset;
-								border: none;
-								display: flex;
-								justify-content: center;
-								.view {													
-									a {
-										color: @letter-color;
-										text-decoration: none ;
-										font-size: 12px;
-									}
-								}
-								.box {
-									.line {
-										margin-top: 6px;
-										margin-right: 13px;
-										margin-left: 13px;
-										border: 1px solid #767676;
-										height: 10px;
-									}
-								}
-								.buy {
-									margin: 0;
-									.tocart{
-										padding: 0;
-										background: none;
-										border: none;
-										cursor: pointer;
-										.action {
-											padding-top: 6px;
-											box-shadow: none ;											
-											padding: 0;
-											color: #ff9acd;											
-											font-size: 12px;
-										}
-									}
-								}
-							}
-						}
-					}
 				}
-			}			
+			}
 		}
-	}	
-	}	
+	}
 }
 
-//Homepage feature product desktop
+
+
 & when (@media-common = false) {
 	//trending
-	.trending-product {
-		.trending-product__title {
+	.block-products-list {
+		.block-title {
 				strong {
 					font-size: 36px;
 				}
 		}
-		.owl-theme {
-				position: relative;
-				.owl-nav {
-					position: absolute;
-					width: 100%;
-					top: 29.5%;
-					.owl-prev {
-						float: left;
-						position: relative;
-						left: -6.5em;
-						width: 0;
-						height: 0;
-						border-right: 20px solid #000;
-						border-top: 20px solid transparent;
-						border-bottom: 20px solid transparent;
-						span{
-							display: none;
-						}
-					  }
-					.owl-prev:hover {
-						border-right: 20px solid #b2b2b2;
-						background: #fff;
-						color: #FFF;
-						text-decoration: none;
-					  }
-					.owl-next {
-						float: right;
-						position: relative;
-						right: -6.5em;
-						width: 0;
-						height: 0;
-						border-left: 20px solid #000;
-						border-top: 20px solid transparent;
-						border-bottom: 20px solid transparent;
-						span {
-							display: none;
-						}
-					}
-					.owl-next:hover {
-						border-left: 20px solid #b2b2b2;
-						background: #fff;
-						color: #FFF;
-						text-decoration: none;
-					  }
-				}
-			}
-		}	
-	}
+	}	
+}
 
-	//reponsive
 .media-width(@extremum, @break) when (@extremum ='max') and (@break = @screen__xs) {
 
-	.trending-product{
-		.trending-product__title {
+	.block-products-list{
+		.block-title {
 			strong {
 				font-size: 23px;
 			}

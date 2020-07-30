@@ -34,21 +34,6 @@
                 </block>
             </container>
         </referenceContainer>
-        <move element="product-size-guide" destination="product.info.options.wrapper.bottom"
-              before="product.info.addtocart"/>
-        <referenceBlock name="product.info.details">
-            <block class="Magento\Catalog\Block\Product\View" name="product.tab.delivery"
-                   template="Magento_Catalog::product/view/tab_delivery_custom.phtml" group="detailed_info">
-                <arguments>
-                    <argument name="title" translate="true" xsi:type="string">Delivery</argument>
-                </arguments>
-            </block>
-            <block class="Magento\Catalog\Block\Product\View" name="product.tab.return"
-                   template="Magento_Catalog::product/view/tab_return_custom.phtml" group="detailed_info">
-                <arguments>
-                    <argument name="title" translate="true" xsi:type="string">Returns</argument>
-                </arguments>
-            </block>
-        </referenceBlock>
+        <move element="product-size-guide" destination="product.info.options.wrapper.bottom" before="product.info.addtocart"/>
     </body>
 </page>
