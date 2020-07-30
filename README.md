@@ -30,9 +30,10 @@ Bai tap theme MKOD
 
 2. Footer
 2.1. Tạo block MKOD Footer FEATURES :
-        +title : MKOD Footer FEATURES<br/>
-        +id    : mkod-footer-features<br/>
-        +content:
+
+        + title : MKOD Footer FEATURES
+        + id    : mkod-footer-features
+        + content:
 
             <div>
                 <h2 class="footer-header">FEATURES</h2>
@@ -43,10 +44,12 @@ Bai tap theme MKOD
                     <li class="nav item"><a href="{{store url="delivery"}}">delivery</a></li>
                 </ul>
             </div>
+
     2.2. Tạo block mkod footer customer service 1:
-        +title : mkod footer customer service<br/>
-        +id    : mkod-footer-customer-service<br/>
-        +content:
+
+        + title : mkod footer customer service
+        + id    : mkod-footer-customer-service
+        + content:
 
             <div>
             <h2 class="footer-header">customer service</h2>
@@ -55,38 +58,47 @@ Bai tap theme MKOD
             <p>Unit 1, Fashion city, Balymount, D24</p>
             </div>
             </div>
+
     2.3. Tạo block MKOD footer copyright :
-        +title : MKOD footer copyright<br/>
-        +id    : mkod-footer-copyright<br/>
-        +content:
+
+        + title : MKOD footer copyright
+        + id    : mkod-footer-copyright
+        + content:
 
             <div class="mkod-copyright">
             <h2 class="footer-header">YOUR ORDER</h2>
             <p class="footer-content">Copyright © 2018 - 2019 MyKindofDress</p>
             </div>
 
-3. Phần HomePage:<br/>
-	3.1.Banner:<br/>
-	- Tạo block:<br/>
-		+Title: banner.<br/>
-		+Id: banner.<br/>
-		+Content: lấy ảnh bannerx2.png trong web/images:<br/>
-        
-            <div class="banner">
-                <div class="banner__img"><a href="#"><img src="{{media url="wysiwyg/bannerx2.png"}}" alt=""></a></div>
-                <div class="banner__content">
-                    <div class="slogan">
-                        <p>step into summer</p>
-                    </div>
-                    <div class="button"><a href="#">shop now</a></div>
-                </div>
-            </div>
+3. Phần HomePage:
+	
+    3.1.Banner:
 
-	3.2.Banner:<br/>
-		- Tạo block:<br/>
-			+Title: featured products.<br/>
-			+Id: featured-products.<br/>
-			+Content: lấy ảnh theo tên trong thẻ img trong web/images:<br/>
+	    - Tạo block:
+            + Title: banner.
+            + Id: banner.
+            + Content: lấy ảnh bannerx2.png trong web/images:
+                <div class="banner">
+                    <div class="banner__img">
+                        <a href="#"><img src="{{media url="wysiwyg/bannerx2.png"}}" alt=""></a>
+                    </div>
+                    <div class="banner__content">
+                        <div class="slogan">
+                            <p>step into summer</p>
+                        </div>
+                        <div class="button">
+                            <a href="#">shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+	3.2. Banner:
+
+		- Tạo block:
+
+			+Title: featured products.
+			+Id: featured-products.
+			+Content: lấy ảnh theo tên trong thẻ img trong web/images:
 
         <div class="featured-products">
             <div class="featured-products__title">
@@ -150,15 +162,19 @@ Bai tap theme MKOD
             </div>
         </div>
 
-	3.3. Thêm widget vào Homepage:<br/>
-		-Type widget: Catalog product list.<br/>
-		-Sau khi add sẽ thấy như dưới (lưu ý thay đổi file template grid.phtml thành file ta thay đổi, như bên dưới là test.phtml):<br/>
+	3.3. Thêm widget vào Homepage:
+    
+		-Type widget: Catalog product list.
+		-Sau khi add sẽ thấy như dưới (lưu ý thay đổi file template grid.phtml thành file ta thay đổi, như bên dưới là test.phtml):
+
 			<div>
                 <p>{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" title="trending now" show_pager="0" products_count="10" template="Magento_CatalogWidget::product/widget/content/test.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`43`^]^]"}}</p>
             </div>
     
 4. Trang Listing product:
+
     4.1. tắt filter theo attribute section in layered navigation
+        
         - Vào Admin Chọn Catalog > Categories<br/>
         - Chọn danh mục hiển thị sản phẩm <br/>
         - chọn phần Display Settings > Anchor chọn no.<br/>
