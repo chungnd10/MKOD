@@ -175,11 +175,13 @@ Bai tap theme MKOD
 4. Listing product:
 
     4.1. tắt filter theo attribute section in layered navigation
-        
-        - Vào Admin Chọn Catalog > Categories<br/>
-        - Chọn danh mục hiển thị sản phẩm <br/>
-        - chọn phần Display Settings > Anchor chọn no.<br/>
-        - Phần content > thêm mô tả danh mục<br/>
+
+        - B1: tắt filter theo atribute và thêm mới nội dung cate
+            - Vào Admin Chọn Catalog > Categories
+            - Chọn danh mục hiển thị sản phẩm 
+            - Phần Display Settings > Anchor chọn No.
+            - Phần content > thêm mô tả danh mục
+            - Phần Design > Layout > chọn 1 column
        
 5. Product detail
 
