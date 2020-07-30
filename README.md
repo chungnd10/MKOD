@@ -1,4 +1,4 @@
-Bai tap tao theme MKOD
+Bai tap theme MKOD
 
 1. Header
 2. Footer
