@@ -28,7 +28,6 @@ Bai tap tao theme MKOD
         _(*2 Ảnh lấy trong thư mục AHT/MKOD/web/images/)_
 
 2. Footer
-<<<<<<< HEAD
     2.1. Tạo block MKOD Footer FEATURES :
         +title : MKOD Footer FEATURES
         +id    : mkod-footer-features
@@ -64,8 +63,6 @@ Bai tap tao theme MKOD
             <h2 class="footer-header">YOUR ORDER</h2>
             <p class="footer-content">Copyright © 2018 - 2019 MyKindofDress</p>
             </div>
-=======
->>>>>>> 4aeae83a9356d6040057536cda014606d58f94d4
 3. Phần HomePage:
 	3.1.Banner:
     
