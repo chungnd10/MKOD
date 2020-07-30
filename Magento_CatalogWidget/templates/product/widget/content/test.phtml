@@ -47,13 +47,20 @@ use Magento\Framework\App\Action\Action;
                                             <?= $block->escapeHtml($_item->getName()) ?>
                                         </a>
                                     </strong>
+                                    <div class="cate">
+                                    <?php 
+                                        // $categoryId = $_item->getCategoryIds();
+                                        // echo $categoryId;
+                                        // $blockObj= $block->getLayout()->createBlock('AHT\FirstModule\Block\CustomBlock');
+                                        // echo $blockObj->getCategoryName($categoryId);
+                                    ?>
+                                    </div>
                                     <?php if ($templateType) : ?>
                                         <?= $block->getReviewsSummaryHtml($_item, $templateType) ?>
                                     <?php endif; ?>
 
                                     <?= $block->getProductPriceHtml($_item, $type) ?>
-
-                                    <?= $block->getProductDetailsHtml($_item) ?>
+                                    
 
                                     <?php if ($showWishlist || $showCompare || $showCart) : ?>
                                         <div class="product-item-inner actions">
@@ -143,14 +150,22 @@ use Magento\Framework\App\Action\Action;
             },
             768:{
                 items:3,
-                nav: false
+                nav: false,
+                margin: 10
             },
             1024:{
                 items:4,
-                nav: false
+                nav: false,
+                margin: 10
             },
             1366:{
-                items:5
+                items:5,
+                nav: false,
+                margin: 10
+            },
+            1450:{
+                items:5,
+                margin: 10 
             }          
         }
     });
