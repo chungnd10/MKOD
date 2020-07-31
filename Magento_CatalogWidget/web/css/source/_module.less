@@ -34,7 +34,8 @@
 
                             &:hover {
                                 margin: unset;
-                                padding: unset;
+								padding: unset;
+								position: absolute;
                             }
 
                             .product-item-photo {
@@ -130,11 +131,8 @@
         }
     }
 
-    //rieng cho homepage
-
-
-    //trending
-    .trending-product {
+    //create trending nav
+    .trending-product__content {
         .owl-theme {
             position: relative;
 
@@ -212,44 +210,46 @@
                 font-size: 23px;
             }
         }
-
-        .slideTrending {
-            .owl-nav {
-                left: -18px !important;
-                width: 111.7% !important;
-
-                .owl-prev {
-                    &:hover {
-                        border-right: none !important;
-                    }
-
-                    box-shadow: none;
-                    width: auto !important;
-                    height: auto !important;
-                    border: none !important;
-                    left: -13px;
-
-                    img {
-                        transform: scale(0.6);
-                    }
-                }
-
-                .owl-next {
-                    &:hover {
-                        border-left: none !important;
-                    }
-
-                    box-shadow: none;
-                    width: auto !important;
-                    height: auto !important;
-                    border: none !important;
-                    right: -13px;
-
-                    img {
-                        transform: scale(0.6);
-                    }
-                }
-            }
-        }
+		.trending-product__content {
+			.slideTrending {
+				.owl-nav {
+					left: -18px;
+					width: 111.7%;
+	
+					.owl-prev {
+						&:hover {
+							border-right: none;
+						}
+	
+						box-shadow: none;
+						width: auto;
+						height: auto;
+						border: none;
+						left: -13px;
+	
+						img {
+							transform: scale(0.6);
+						}
+					}
+	
+					.owl-next {
+						&:hover {
+							border-left: none;
+						}
+	
+						box-shadow: none;
+						width: auto;
+						height: auto;
+						border: none;
+						right: -13px;
+	
+						img {
+							transform: scale(0.6);
+						}
+					}
+				}
+			}
+		}
+        
     }
 }
