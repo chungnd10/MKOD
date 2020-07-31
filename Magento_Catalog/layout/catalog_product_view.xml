@@ -13,6 +13,7 @@
         <move element="product.info.sku" destination="product.info.main" after="page.main.title"/>
         <move element="product.info.stock.sku" destination="product.info.main" after="product.info.price"/>
         <referenceBlock name="product.info.review" remove="true"/>
+        <referenceContainer name="product.info.social" remove="true"/>
         <referenceContainer name="product.info.stock.sku">
             <block class="Magento\CMS\Block\Block" name="info-shipping">
                 <arguments>
