@@ -12,7 +12,7 @@
 }
 
 .page-main-title2 {
-    padding: 25px 0px;
+    padding: 25px 0;
     margin: 0 10px;
     background: #fadcdc;
     text-align: center;
@@ -59,7 +59,6 @@
 & when (@media-common = true) {
 
     .product-info-main {
-        padding-right: 80px;
         .page-title-wrapper {
             text-align: center;
             border-top: 1px solid #a7a7a7;
@@ -226,6 +225,10 @@
                     }
                 }
             }
+
+            .review-add {
+                text-align: left;
+            }
         }
 
         .social-network {
@@ -268,6 +271,7 @@
     }
 
     .product-info-main {
+        padding-right: 70px;
         .product-add-form {
             padding: 0;
         }
@@ -312,7 +316,6 @@
     }
 }
 
-
 //
 // Min @screen_m
 // _____________________________________________
@@ -332,15 +335,33 @@
                 height: 865px !important;
             }
 
-            .fotorama__nav--thumbs{
+            .fotorama__nav--thumbs {
                 padding-left: 22px;
             }
         }
     }
-    .main{
-        .related{
+    .main {
+        .related {
             clear: both;
         }
     }
 
+}
+
+//
+// From @screen_m to @screen_l
+// _____________________________________________
+
+@media screen and (min-width: @screen__m) and (max-width: @screen__l) {
+    .page-layout-1column {
+
+        .product-info-main {
+            width: 100%;
+            padding-right: 0;
+        }
+
+        .product.media {
+            width: 100%;
+        }
+    }
 }

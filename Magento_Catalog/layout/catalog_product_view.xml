@@ -51,5 +51,6 @@
                 </arguments>
             </block>
         </referenceBlock>
+        <move element="product.info.media" destination="content" before="-"/>
     </body>
 </page>

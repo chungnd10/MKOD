@@ -9,12 +9,15 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-<!--        <referenceContainer name="account.links.custom">-->
-<!--            <block class="Magento\Customer\Block\Account\AuthorizationLink" name="authorization-link-custom"-->
-<!--                   template="Magento_Customer::account/link/authorization-custom.phtml">-->
-<!--            </block>-->
+<!--        <referenceBlock name="top.links" remove="true"/>-->
+<!--        <referenceBlock name="header.links" remove="true"/>-->
+
+<!--        <referenceContainer name="header-wrapper">-->
+<!--            <container htmlTag="div" htmlClass="block-account" name="header-account">-->
+<!--                <block class="Magento\Customer\Block\Account\AuthorizationLink" name="header.account"-->
+<!--                       template="Magento_Customer::account/header_account.phtml">-->
+<!--                </block>-->
+<!--            </container>-->
 <!--        </referenceContainer>-->
-<!--        <move element="top.links" destination="header-wrapper" before="minicart"/>-->
-<!--        <move element="header.links" destination="header-wrapper" before="minicart"/>-->
     </body>
 </page>

@@ -167,6 +167,7 @@ Bai tap theme MKOD
 
 	3.3. Thêm widget vào Homepage:
     
+        -Vào Content->Pages->Homepage > Tạo mới wwifget trong phần content
 		-Type widget: Catalog product list.
 		-Sau khi add sẽ thấy như dưới:
 			<div>
