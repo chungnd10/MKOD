@@ -176,7 +176,6 @@ Bai tap theme MKOD
 
     4.1. tắt filter theo attribute section in layered navigation
 
-        - B1: tắt filter theo atribute và thêm mới nội dung cate
             - Vào Admin Chọn Catalog > Categories
             - Chọn danh mục hiển thị sản phẩm 
             - Phần Display Settings > Anchor chọn No.
