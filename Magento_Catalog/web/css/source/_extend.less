@@ -365,28 +365,29 @@
 // Desktop
 // _____________________________________________
 
-& when (@media-common =false) {
+& when (@media-common = false) {
 
-	.product-options-bottom {
-		.actions {
-			.tocart {
-				width: 70%;
-			}
-		}
-	}
+    .product-options-bottom {
+        .actions {
+            .tocart {
+                width: 70%;
+            }
+        }
+    }
 
-	.product-info-main {
-		.product-add-form {
-			padding: 0;
-		}
-	}
+    .product-info-main {
+        padding-right: 70px;
+        .product-add-form {
+            padding: 0;
+        }
+    }
 
-	.social-network {
-		ul {
-			justify-content: start !important;
-			padding        : 0;
-		}
-	}
+    .social-network {
+        ul {
+            justify-content: start !important;
+            padding: 0;
+        }
+    }
 }
 
 //
@@ -420,36 +421,52 @@
 	}
 }
 
-
 //
 // Min @screen_m
 // _____________________________________________
 
-.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
-	.page-layout-1column {
-		.product-info-main {
-			width: 44%;
-		}
-	}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-layout-1column {
+        .product-info-main {
+            width: 44%;
+        }
+    }
 
-	.page-layout-1column {
-		.product.media {
-			width: 44%;
+    .page-layout-1column {
+        .product.media {
+            width: 44%;
 
-			.fotorama__stage {
-				height: 865px !important;
-			}
+            .fotorama__stage {
+                height: 865px !important;
+            }
 
-			.fotorama__nav--thumbs {
-				padding-left: 22px;
-			}
-		}
-	}
+            .fotorama__nav--thumbs {
+                padding-left: 22px;
+            }
+        }
+    }
+    .main {
+        .related {
+            clear: both;
+        }
+    }
 
-	.main {
-		.related {
-			clear: both;
-		}
-	}
+}
 
+//
+// From @screen_m to @screen_l
+// _____________________________________________
+
+@media screen and (min-width: @screen__m) and (max-width: @screen__l) {
+    .page-layout-1column {
+
+        .product-info-main {
+            width: 100%;
+            padding-right: 0;
+        }
+
+        .product.media {
+            width: 100%;
+        }
+    }
 }

@@ -13,6 +13,7 @@
         <move element="product.info.sku" destination="product.info.main" after="page.main.title"/>
         <move element="product.info.stock.sku" destination="product.info.main" after="product.info.price"/>
         <referenceBlock name="product.info.review" remove="true"/>
+        <referenceContainer name="product.info.social" remove="true"/>
         <referenceContainer name="product.info.stock.sku">
             <block class="Magento\CMS\Block\Block" name="info-shipping">
                 <arguments>
@@ -58,5 +59,6 @@
         <move element="page.main.title" destination="page.main.title2" before="-" />
         <move element="category.description" destination="page.main.title2" after="page.main.title" />
         <move element="breadcrumbs" destination="page.wrapper" after="page.main.title2"/>
+        <move element="product.info.media" destination="content" before="-"/>
     </body>
 </page>
