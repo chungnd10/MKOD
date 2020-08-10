@@ -51,14 +51,13 @@
                 </arguments>
             </block>
         </referenceBlock>
+        <move element="product.info.media" destination="content" before="-"/>
+
         <referenceBlock name="page.wrapper">
-            <container name="page.main.title2" htmlTag="div" htmlId="page-main-title2" htmlClass="page-main-title2" before="main.content">
+            <container name="header.view.product" htmlTag="div" htmlId="header-view-product" htmlClass="header-view-product" before="main.content">
 
             </container>
         </referenceBlock>
-        <move element="page.main.title" destination="page.main.title2" before="-" />
-        <move element="category.description" destination="page.main.title2" after="page.main.title" />
-        <move element="breadcrumbs" destination="page.wrapper" after="page.main.title2"/>
-        <move element="product.info.media" destination="content" before="-"/>
+        <move element="breadcrumbs" destination="header.view.product" before="-"/>
     </body>
 </page>

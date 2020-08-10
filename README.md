@@ -241,5 +241,10 @@ Bai tap theme MKOD
             - Thuộc Attribute Dress vừa tạo
             - Cấu hình cho sản phẩm có từ 4-7 size 
 
+    5.5 Next-prev sản phẩm
+
+        - clone module từ : https://github.com/BoyStarIT/MKOD-Module-Nextpre
+        - đọc README.md và làm theo hướng dẫn
+        
 _*Lưu ý: ảnh dùng cho sản phẩm có kích cỡ 800*1200px_ <br>
 _*Nếu ảnh không hiển thị đúng kích thước thì chạy lệnh bin/magento catalog:images:resize_ 
