@@ -52,5 +52,12 @@
             </block>
         </referenceBlock>
         <move element="product.info.media" destination="content" before="-"/>
+
+        <referenceBlock name="page.wrapper">
+            <container name="header.view.product" htmlTag="div" htmlId="header-view-product" htmlClass="header-view-product" before="main.content">
+
+            </container>
+        </referenceBlock>
+        <move element="breadcrumbs" destination="header.view.product" before="-"/>
     </body>
 </page>

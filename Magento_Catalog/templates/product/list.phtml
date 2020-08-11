@@ -26,6 +26,7 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
 <?php else :?>
 <?= $block->getToolbarHtml() ?>
 <?= $block->getAdditionalHtml() ?>
+
 <?php
     if ($block->getMode() == 'grid') {
         $modenew='';
@@ -44,8 +45,10 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
      * Position for actions regarding image size changing in vde if needed
      */
     $pos = $block->getPositioned();
+    
     ?>
-<div class="products wrapper <?= /* @noEscape */ $viewMode ?> products-<?= /* @noEscape */ $viewMode ?> <?= /* @noEscape */ $modenew ?>">
+<div
+    class="products wrapper product-list-mkod <?= /* @noEscape */ $viewMode ?> products-<?= /* @noEscape */ $viewMode ?> <?= /* @noEscape */ $modenew ?>">
     <ol class="products list items product-items">
         <?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
         <?php foreach ($_productCollection as $_product) :?>
@@ -79,6 +82,13 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
                     <?php endif; ?>
 
                     <div class="product-item-inner">
+                        <div class="view">
+                            <a href="<?= $block->escapeUrl($block->getProductUrl($_product)) ?>">View</a>
+                        </div>
+                        <div class="box">
+                            <div class="line"></div>
+                        </div>    
+
                         <div class="product actions product-item-actions"
                             <?= strpos($pos, $viewMode . '-actions') ? $block->escapeHtmlAttr($position) : '' ?>>
                             <div class="actions-primary"
@@ -95,7 +105,7 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
                                     <?= $block->getBlockHtml('formkey') ?>
                                     <button type="submit" title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>"
                                         class="action tocart primary">
-                                        <span><?= $block->escapeHtml(__('Add to Cart')) ?></span>
+                                        <span><?= $block->escapeHtml(__('Buy')) ?></span>
                                     </button>
                                 </form>
                                 <?php else :?>
@@ -108,12 +118,7 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
                                 <?php endif; ?>
                                 <?php endif; ?>
                             </div>
-                            <div data-role="add-to-links" class="actions-secondary"
-                                <?= strpos($pos, $viewMode . '-secondary') ? $block->escapeHtmlAttr($position) : '' ?>>
-                                <?php if ($addToBlock = $block->getChildBlock('addto')) :?>
-                                <?= $addToBlock->setProduct($_product)->getChildHtml() ?>
-                                <?php endif; ?>
-                            </div>
+                            
                         </div>
                         <?php if ($showDescription) :?>
                         <div class="product description product-item-description">
@@ -140,6 +145,68 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
                 }
             }
         }
-        </script>
+</script>
 <?php endif; ?>
 <?php endif; ?>
+<!-- <script type="text/javascript">
+    
+    $( document ).ready(function() {
+        var placeholderTop = placeholder.offset().top;
+        var viewTop = view.scrollTop();
+        if (
+            (viewTop > placeholderTop) &&
+            !message.is( ".site-message-fixed" )
+            ){
+
+
+            placeholder.height(
+                placeholder.height()
+            );
+
+            // Make the message fixed.
+            message.addClass( "site-message-fixed" );
+
+        // Check to see if the view has scroll back up
+        // above the message AND that the message is
+        // currently fixed.
+        } else if (
+            (viewTop <= placeholderTop) &&
+            message.is( ".site-message-fixed" )
+            ){
+
+            // Make the placeholder height auto again.
+            placeholder.css( "height", "auto" );
+
+            // Remove the fixed position class on the
+            // message. This will pop it back into its
+            // static position.
+            message.removeClass( "site-message-fixed" );
+
+        }
+    });
+}); -->
+<script type="text/javascript" src="jquery-1.4a2.js"></script>
+<script type="text/javascript">
+
+		jQuery(function( $ ){
+			var placeholder = $( ".product-list-mkod" );
+			var message = $( ".toolbar-products" );
+			var view = $( window );
+			view.bind(
+				"scroll resize",
+				function(){
+					var placeholderTop = placeholder.offset().top;
+					var viewTop = view.scrollTop();
+					if (viewTop > placeholderTop){
+                        message.addClass( "toolbar-products-fixed" );
+
+					} else if (viewTop <= placeholderTop){
+						message.removeClass( "toolbar-products-fixed" );
+					}
+				}
+			);
+
+		});
+
+	</script>
+</script>

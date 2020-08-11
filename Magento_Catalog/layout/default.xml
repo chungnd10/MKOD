@@ -2,5 +2,6 @@
     <body>
         <referenceBlock name="catalog.compare.sidebar" remove="true"/>
         <referenceBlock name="wishlist_sidebar" remove="true" />
+        <referenceContainer name="catalog.leftnav" remove="true"/>
     </body>
 </page>

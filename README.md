@@ -176,11 +176,12 @@ Bai tap theme MKOD
 4. Listing product:
 
     4.1. tắt filter theo attribute section in layered navigation
-        
-        - Vào Admin Chọn Catalog > Categories<br/>
-        - Chọn danh mục hiển thị sản phẩm <br/>
-        - chọn phần Display Settings > Anchor chọn no.<br/>
-        - Phần content > thêm mô tả danh mục<br/>
+
+            - Vào Admin Chọn Catalog > Categories
+            - Chọn danh mục hiển thị sản phẩm 
+            - Phần Display Settings > Anchor chọn No.
+            - Phần content > thêm mô tả danh mục
+            - Phần Design > Layout > chọn 1 column
        
 5. Product detail
 
@@ -240,5 +241,10 @@ Bai tap theme MKOD
             - Thuộc Attribute Dress vừa tạo
             - Cấu hình cho sản phẩm có từ 4-7 size 
 
+    5.5 Next-prev sản phẩm
+
+        - clone module từ : https://github.com/BoyStarIT/MKOD-Module-Nextpre
+        - đọc README.md và làm theo hướng dẫn
+        
 _*Lưu ý: ảnh dùng cho sản phẩm có kích cỡ 800*1200px_ <br>
 _*Nếu ảnh không hiển thị đúng kích thước thì chạy lệnh bin/magento catalog:images:resize_ 
